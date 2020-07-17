@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CALCULATOR</title>
+		<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body class="bg-light px-3 py-5">
+		<div class="calculator container bg-secondary text-center px-0 py-2">
+			<b>. . . .</b>
+			<div class="row mx-3">
+				<div class="screen-frame">
+					<input class="screen input w-100" value="" readonly />
+					<input class="screen output w-100" readonly />
+				</div>
+			</div>
+			<div class="numbers">
+				<div class="clr-del row d-inline-flex justify-content-around">
+					<div class="mx-4">
+						<button type="button" class="clear num-btn" onclick="clearScreen()">CLR</button>
+					</div>
+					<div class="mx-4">
+						<button type="button" class="delete num-btn" onclick="deleteInput()">DEL</button>
+					</div>
+				</div>
+				<div class="fig row">
+					<div class="col-3">
+						<button type="button" class="num-btn number" onclick="seven()">7</button>
+					</div>
+					<div class="col-3">
+						<button type="button" class="num-btn number" onclick="eight()">8</button>
+					</div>
+					<div class="col-3">
+						<button type="button" class="num-btn number" onclick= "nine()">9</button>
+					</div>
+					<div class="col-3">
+						<button type="button" class="num-btn operator" onclick= "divide()">÷</button>
+					</div>
+				</div>
+				<div class="fig row">
+					<div class="col-3">
+						<button type="button" class="num-btn number" onclick="four()">4</button>
+					</div>
+					<div class="col-3">
+						<button type="button" class="num-btn number" onclick="five()">5</button>
+					</div>
+					<div class="col-3">
+						<button type="button" class="num-btn number" onclick="six()">6</button>
+					</div>
+					<div class="col-3">
+						<button type="button" class="num-btn operator" onclick= "multiply()">×</button>
+					</div>
+				</div>
+				<div class="fig row">
+					<div class="col-3">
+						<button type="button" class="num-btn number" onclick="one()">1</button>
+					</div>
+					<div class="col-3">
+						<button type="button" class="num-btn number" onclick="two()">2</button>
+					</div>
+					<div class="col-3">
+						<button type="button" class="num-btn number" onclick="three()">3</button>
+					</div>
+					<div class="col-3">
+						<button type="button" class="num-btn operator" onclick= "subtract()">-</button>
+					</div>
+				</div>
+				<div class="fig row">
+					<div class="col-3">
+						<button type="button" class="num-btn" onclick= "point()">.</button>
+					</div>
+					<div class="col-3">
+						<button type="button" class="num-btn number" onclick="zero()">0</button>
+					</div>
+					<div class="col-3">
+						<button type="button" class="num-btn operator" onclick="compute()">=</button>
+					</div>
+					<div class="col-3">
+						<button type="button" class="num-btn operator" onclick= "add()">+</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="index.js"></script>
+		<script src="bootstrap/bootstrap.min.js"></script>
+		<script src="bootstrap/jquery.js"></script>
+	</body>
+</html>
